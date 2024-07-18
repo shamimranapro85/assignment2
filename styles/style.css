@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* font setup from fiile  */
+@font-face {
+  font-family: "Miama";
+  src: url("../font/Miama.ttf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter";
+}
+
+/* nav desgin -------------------------------*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #e6533c;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+}
+
+.navItems > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background: linear-gradient(
+    0deg,
+    black -20%,
+    #000000e8 11%,
+    #141414e8 50%,
+    black 120%
+  );
+}
+
+
+/* banner section design---------------------------- */
+
+.bannerDetails > h1> span {
+    font-family: "Miama";
+    font-size: 70px;
+}
