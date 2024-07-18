@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+:root {
+  --bg-color: rgb(31, 31, 31);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
+}
+p {
+  color: gray;
 }
 .container {
   width: 80%;
   margin: 0 auto;
-  font-family: "Inter";
 }
 .btns {
   border: 0.5px solid rgb(53, 53, 53);
   border-radius: 20px;
   padding: 10px 20px;
-
+  color: white;
   background-color: transparent;
 }
 .btn {
@@ -90,8 +97,6 @@ header {
 
 /* banner section design---------------------------- */
 
-
-
 .MenuBTN {
   display: none;
 }
@@ -109,188 +114,220 @@ header {
 
 .bannerDetails > h1 {
   font-size: 5em;
-  line-height: .9;
+  line-height: 0.9;
 }
 
-
-.bannerDetails>p{
-    color: gray;
+.bannerDetails > p {
+  color: gray;
 }
-.bannerDetails{
-    display: flex;
-    gap: 28px;
-    flex-direction: column;
-    justify-content: center;
-    
+.bannerDetails {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  justify-content: center;
 }
 .bannerDetails > h1 > span {
-    font-family: "Miama";
-    font-size: 2em;
-    font-weight: normal;
-  }
+  font-family: "Miama";
+  font-size: 2em;
+  font-weight: normal;
+}
 
-
-.bannerIMG>img{
+.bannerIMG > img {
   width: 60%;
-
 }
-.bannerIMG{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.BannerVideos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 10px;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgb(82, 82, 82);
-    border-radius: 5px;
-    position: absolute;
-    bottom: 80px;
-    left: 50px;
-
-}
-.fa-play{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #e6533c;
-    
+.bannerIMG {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.BannerVideos2{
-    top: 220px;
-    bottom: auto;
-    right: 120px;
-    left: auto;
-    flex-direction: column;
-    gap: 0;
-
-
+.BannerVideos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 80px;
+  left: 50px;
+}
+.fa-play {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #e6533c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* responsive deisgn -----------------------------------------------------------------------------------------------00000000000 */
-
-@media screen and (max-width: 576px) {
-  .container {
-    width: 92%;
-    overflow: hidden;
-  }
-  .MenuBTN {
-    display: inline-block;
-  }
-
-  .navItems {
-    display: none;
-  }
-  .banner {
-  
-    padding: 50px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .banner > * {
-    width: 100%;
-  }
-
-  .btnss{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 50x;
-  }
-  .btnss> button{
-    width: 48%;
-    padding: 15px;
-  }
-
-  .bannerDetails > h1 {
-    font-size: 
-    3em;}
-
-    .BannerVideos{
-     top: 220px;
-     bottom: auto;
-    }
-    .BannerVideos2{
-     top: 80px;
-     bottom: auto;
-     right: 50px;
-    }
+.BannerVideos2 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 80px;
+  left: 50px;
+  top: 220px;
+  bottom: auto;
+  right: 120px;
+  left: auto;
 }
 
-@media screen and (min-width: 577px) and (max-width:768px) {
-  .container {
-    width: 540px;
-  }
-  .banner {
-  
-    padding: 50px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .banner > * {
-    width: 100%;
-  }
+.flexVideosItem {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: start;
+  align-items: start;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .container {
-    width: 720px;
-  }
-  .bannerDetails > h1 {
-    font-size: 3em;}
-    .BannerVideos{
-      top: 220px;
-      bottom: auto;
-     }
-     .BannerVideos2{
-      top: 80px;
-      bottom: auto;
-      right: 20px;
-     }
+/*  run section design ---------------------------- */
+
+.AllTitles {
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  padding: 50px 0;
+  flex-direction: column;
+  font-family: "Inter";
 }
-@media screen and (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-  .bannerDetails > h1 {
-    font-size: 4em;}
+.AllTitles > p {
+  color: gray;
 }
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
+
+.personeBuilder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
 }
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 1320px;
-  }
+
+.singlePerson > div > p {
+  color: gray;
+  width: 80%;
+  margin: 15px auto;
+}
+.singlePerson > img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 0.5px solid gray;
+}
+
+/* next run extra section*/
+
+.runExtra {
+  background: var(--bg-color);
+  padding: 20px 30px;
+  display: flex;
+  border-radius: 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+.runDetails > p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.runDetails {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.runDetails > button {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.runExtra > .img {
+  overflow: hidden;
+  width: 400px;
+  border-radius: inherit;
+}
+.runExtra > div > img {
+  width: 100%;
+  transform: scale(3) translateX(-50px) translateY(40px);
+}
+
+.habitsSec > div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* bmi table------------------ */
+.calculator {
+  background-color: var(--bg-color);
+}
+.BMITable {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 0.5px solid gray;
+  padding: 10px;
+  text-align: left;
+}
+table {
+  width: 400px;
+}
+
+.gridForm {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+select[name="factor"] {
+  grid-column: 1/-1;
+}
+
+.calculator {
+  padding: 30px 0;
+}
+.calculator > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+}
+td {
+  color: gray;
+}
+
+.calculator > div {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.gridForm > input,
+select {
+  background-color: rgb(70, 70, 70);
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: whitesmoke;
+}
+
+.gridForm > input::placeholder {
+  color: whitesmoke;
+}
+.fromBTN {
+  margin-top: 10px;
 }
