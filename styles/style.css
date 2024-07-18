@@ -17,8 +17,8 @@
 
   background-color: transparent;
 }
-.btn{
-    transition: .2s;
+.btn {
+  transition: 0.2s;
 }
 
 .btn:hover {
@@ -26,6 +26,10 @@
 }
 a {
   text-decoration: none;
+}
+body {
+  background: black;
+  color: white;
 }
 
 /* font setup from fiile  */
@@ -48,7 +52,7 @@ a {
 }
 
 .logo {
-    font-size: 30px;
+  font-size: 30px;
   color: #e6533c;
   font-weight: bold;
   font-style: italic;
@@ -69,8 +73,8 @@ a {
   color: white;
 }
 .navItems li {
-    padding: 10px 20px;
-  border-radius: inherit  ;
+  padding: 10px 20px;
+  border-radius: inherit;
 }
 
 header {
@@ -90,31 +94,48 @@ header {
   font-size: 70px;
 }
 
-.MenuBTN{
-    display: none;
+.MenuBTN {
+  display: none;
 }
 
-
+/* responsive deisgn -----------------------------------------------------------------------------------------------00000000000 */
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 92%;
+    overflow: hidden;
+  }
+  .MenuBTN {
+    display: inline-block;
+  }
 
-    .container{
-        width: 92%;
-    }
-    .MenuBTN{
-        display: inline-block;
-    }
-
-    .navItems{
-        display: none;
-    }
-    
+  .navItems {
+    display: none;
+  }
 }
 
-
-@media screen and (min-width: 1060px) {
-    .container{
-        width: 1060px;
-    }
-    
+@media screen and (min-width: 577px) {
+  .container {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
 }
