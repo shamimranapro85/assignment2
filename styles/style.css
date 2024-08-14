@@ -335,3 +335,52 @@ select {
 /* meet out team section design  */
 
 
+.allMember{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.allMember> .singleMember{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+ 
+}
+.memberTitle{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 15px;
+  height: 50%;
+  background: linear-gradient(transparent ,rgba(0, 0, 0, 0.734));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.singmember1{
+  background: url("../images/trainer1.png");
+  
+  
+}
+.singmember2{
+  background: url("../images/trainer2.png");
+}
+.singmember3{
+  background: url("../images/trainer3.png");
+}
+.singmember4{
+  background: url("../images/trainer4.png");
+  background-position: left;
+}
+.singmember5{
+  background: url("../images/trainer5.png");
+}
+.singmember6{
+  background: url("../images/exercise6.jpg");
+}

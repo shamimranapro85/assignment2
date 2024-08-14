@@ -1,5 +1,6 @@
 /* responsive deisgn -----------------------------------------------------------------------------------------------00000000000 */
 
+
 @media screen and (max-width: 576px) {
   .container {
     width: 92%;
@@ -39,22 +40,25 @@
   }
 
   .BannerVideos {
-    top: 220px;
-    bottom: auto;
+    bottom: 80px;
+    
   }
   .BannerVideos2 {
     top: 80px;
     bottom: auto;
     align-items: start;
-    right: 50px;
+    right: 30px;
   }
 
   .personeBuilder {
     flex-direction: column;
   }
 
+  .runExtra> .img {
+    width: 100% ;
+  }
   .runExtra {
-    gap: 50px;
+    gap: 20px;
     justify-content: space-between;
     flex-direction: column;
   }
@@ -65,9 +69,31 @@
   .runDetails {
     gap: 30px;
   }
+  .runDetails> button {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  /* calculator */
+  .calculator > div>div {
+    width: 100%;
+    /* background-color: red; */
+  }
   .calculator > div {
     flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
   }
+
+  /* meet our team */
+  .allMember{
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
