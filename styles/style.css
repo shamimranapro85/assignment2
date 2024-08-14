@@ -338,7 +338,7 @@ select {
 .allMember{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 .allMember> .singleMember{
   position: relative;
@@ -383,4 +383,43 @@ select {
 }
 .singmember6{
   background: url("../images/exercise6.jpg");
+}
+
+
+/* footer */
+footer > div{
+  display: flex;
+  
+  gap: 50px;
+  justify-content: space-between;
+
+}
+footer{
+  padding-top: 100px;
+}
+footer > div>div a{
+  color: gray;
+ 
+}
+footer > div>.footer_div2{
+  display: flex;
+  gap: 30px;
+
+}
+footer>div>div{
+  width: 50%;
+}
+
+.footer_div1> p {
+  margin-top: 25px;
+}
+.extra_div{
+  color: gray;
+  padding: 20px 0;
+  text-align: center;
+}
+hr{
+  border: none;
+  margin: 20px 0;
+  border-bottom: .2px  solid rgba(78, 78, 78, 0.59) ;
 }

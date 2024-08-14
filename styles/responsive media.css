@@ -92,7 +92,33 @@
     
   }
 
+ /* footer */
+ footer > div{
+  flex-direction: column;
+  gap: 20px;
+}
+footer{
+  padding-top: 100px;
+}
+footer > div>div a{
+  color: gray;
+ 
+}
+footer > div>.footer_div2{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 
+}
+
+footer>div>div{
+  width: 100%;
+}
+
+.extra_div{
+ 
+  text-align: start;
+}
 
 }
 
@@ -121,6 +147,8 @@
   .calculator > div {
     flex-direction: column;
   }
+
+ 
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
