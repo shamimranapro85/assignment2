@@ -23,7 +23,13 @@
   .banner > * {
     width: 100%;
   }
-
+  table {
+    width: 300px;
+  }
+  .gridForm > input,
+select {
+  font-size: 10px;
+}
   .btnss {
     width: 100%;
     display: flex;
@@ -118,6 +124,14 @@ footer>div>div{
 .extra_div{
  
   text-align: start;
+}
+
+.servicesAll{
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 50px;
+  
 }
 
 }
